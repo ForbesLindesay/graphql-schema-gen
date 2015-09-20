@@ -1,6 +1,6 @@
 {
   "name": "graphql-schema-gen",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Generate JavaScript GraphQL schema from the GraphQL language",
   "main": "./lib/index.js",
   "keywords": [],
