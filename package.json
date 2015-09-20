@@ -1,0 +1,29 @@
+{
+  "name": "graphql-schema-gen",
+  "version": "0.0.0",
+  "description": "Generate JavaScript GraphQL schema from the GraphQL language",
+  "main": "./lib/index.js",
+  "keywords": [],
+  "dependencies": {
+    "graphql": "^0.4.4"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-istanbul": "^0.3.20",
+    "chalk": "^1.1.1",
+    "diff": "^2.1.1",
+    "testit": "^2.0.2"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "babel src --out-dir lib",
+    "test": "babel-node tests/index.js",
+    "coverage": "babel-istanbul cover tests/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ForbesLindesay/graphql-schema-gen.git"
+  },
+  "author": "ForbesLindesay",
+  "license": "MIT"
+}
