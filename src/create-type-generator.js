@@ -200,7 +200,7 @@ export default function createTypeGenerator(graphql) {
               type: getOutputType(field.type),
               description: getDescription(),
               args: args,
-              resolve: !isInterface
+              resolve: !isInterface && implementations[typeName]
                 ? implementations[typeName][field.name.value]
                 : undefined
               // TODO: deprecationReason: string
