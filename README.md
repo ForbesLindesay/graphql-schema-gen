@@ -3,7 +3,7 @@
 Generate JavaScript GraphQL schema from the GraphQL language
 
 [![Build Status](https://img.shields.io/travis/ForbesLindesay/graphql-schema-gen/master.svg)](https://travis-ci.org/ForbesLindesay/graphql-schema-gen)
-[![Dependency Status](https://img.shields.io/gemnasium/ForbesLindesay/graphql-schema-gen.svg)](https://gemnasium.com/ForbesLindesay/graphql-schema-gen)
+[![Dependency Status](https://img.shields.io/david/ForbesLindesay/graphql-schema-gen.svg)](https://david-dm.org/ForbesLindesay/graphql-schema-gen)
 [![NPM version](https://img.shields.io/npm/v/graphql-schema-gen.svg)](https://www.npmjs.org/package/graphql-schema-gen)
 
 ## Installation
