@@ -10,7 +10,7 @@ function createQueryFn(source, implementation) {
   var schema = new graphql.GraphQLSchema({
     query: objectTypes['Query']
   });
-  return (query, context) => graphql.graphql(schema, query, context);
+  return (query, params, context) => graphql.graphql(schema, query, context, params || {});
 }
 createQueryFn.parse = parse;
 createQueryFn.createTypeGenerator = createTypeGenerator;

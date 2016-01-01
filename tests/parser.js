@@ -308,6 +308,34 @@ interface Hello {
     expect(printJson(doc)).to.equal(printJson(expected));
   });
 
+  test('Simple interface with reserved key', () => {
+    var body = `
+interface Hello {
+  type: String
+}`;
+    var doc = parse(body);
+    var loc = createLocFn(body);
+    var expected = {
+      kind: 'Document',
+      definitions: [
+        {
+          kind: 'InterfaceTypeDefinition',
+          name: nameNode('Hello', loc(11, 16)),
+          fields: [
+            fieldNode(
+              nameNode('type', loc(21, 25)),
+              typeNode('String', loc(27, 33)),
+              loc(21, 33)
+            )
+          ],
+          loc: loc(1, 35),
+        }
+      ],
+      loc: loc(1, 35),
+    };
+    expect(printJson(doc)).to.equal(printJson(expected));
+  });
+
   test('Simple field with arg', () => {
     var body = `
 type Hello {

@@ -97,6 +97,18 @@ export default function parse(str, name) {
       };
     }
   });
+
+  var key = withPosition(() => {
+    var state = {str};
+    var name = match(/^[_A-Za-z][_0-9A-Za-z]*/);
+    if (name) {
+      return {
+        kind: 'Name',
+        value: name
+      };
+    }
+  });
+
   var namedType = withPosition(() => {
     var n = name();
     if (n) {
@@ -261,7 +273,7 @@ export default function parse(str, name) {
   });
   var fieldDefinition = withPosition(() => {
     var node = {kind: 'FieldDefinition'};
-    node.name = name();
+    node.name = key();
     if (!node.name) return;
     node.arguments = argumentsDefinition();
     expect(':');
