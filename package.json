@@ -5,13 +5,13 @@
   "main": "./lib/index.js",
   "keywords": [],
   "dependencies": {
-    "graphql": "^0.4.4"
+    "graphql": "^0.9.1"
   },
   "devDependencies": {
-    "babel": "^5.8.23",
-    "babel-istanbul": "^0.3.20",
+    "babel": "^6.23.0",
+    "babel-istanbul": "^0.12.1",
     "chalk": "^1.1.1",
-    "diff": "^2.1.1",
+    "diff": "^3.2.0",
     "testit": "^2.0.2"
   },
   "scripts": {
