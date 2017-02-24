@@ -1,5 +1,7 @@
 # graphql-schema-gen
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ForbesLindesay/graphql-schema-gen.svg)](https://greenkeeper.io/)
+
 Generate JavaScript GraphQL schema from the GraphQL language
 
 [![Build Status](https://img.shields.io/travis/ForbesLindesay/graphql-schema-gen/master.svg)](https://travis-ci.org/ForbesLindesay/graphql-schema-gen)
